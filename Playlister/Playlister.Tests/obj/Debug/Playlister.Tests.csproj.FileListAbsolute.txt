@@ -1,0 +1,81 @@
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.dll.config
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.pdb
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.pdb
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.dll.config
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.pdb
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.dll
+C:\Users\Oliver Ray\Desktop\Playlister\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.pdb
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.dll.config
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\Playlister.Tests.pdb
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Helpers.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Mvc.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Razor.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Helpers.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Mvc.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.Razor.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.csprojResolveAssemblyReference.cache
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.Tests\obj\Debug\Playlister.Tests.pdb
