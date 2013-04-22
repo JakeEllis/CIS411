@@ -8,7 +8,7 @@ namespace Playlister.dal.Repositories
     public class User_CredentialRepo : IRepository<User_Credential>
     {
         PlaylisterDEV _context;
-
+        
         public void User_Credential()
         {
             _context = new PlaylisterDEV();
@@ -21,7 +21,7 @@ namespace Playlister.dal.Repositories
 
         public User_Credential[] getAll()
         {
-            return _context.User_Credentials.ToArray();
+            return _context.User_Credentials.ToArray(); 
         }
 
         public void add(User_Credential playlisterObject)

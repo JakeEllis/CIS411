@@ -78,7 +78,8 @@ namespace Playlister.Tests.Unit_Tests
             });
 
             user_cedentialrepo = new User_CredentialRepo();
-            user_cedentialrepo.add(new User_Credential {
+            user_cedentialrepo.add(new User_Credential
+            {
                 User_Name = "TEST",
                 Password = "TEST",
                 Security_Question_1 = "TEST",
