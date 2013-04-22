@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlaylistDEVDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="PlaylistDEVDBModelStoreContainer">
+    <EntitySet Name="Credential Source Code Table" EntityType="PlaylistDEVDBModel.Store.Credential Source Code Table" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Party" EntityType="PlaylistDEVDBModel.Store.Party" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Person" EntityType="PlaylistDEVDBModel.Store.Person" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Person Role" EntityType="PlaylistDEVDBModel.Store.Person Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Playlist" EntityType="PlaylistDEVDBModel.Store.Playlist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Profile" EntityType="PlaylistDEVDBModel.Store.Profile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role Permission" EntityType="PlaylistDEVDBModel.Store.Role Permission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Song" EntityType="PlaylistDEVDBModel.Store.Song" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="PlaylistDEVDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User Credentials" EntityType="PlaylistDEVDBModel.Store.User Credentials" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Party_Playlist" Association="PlaylistDEVDBModel.Store.FK_Party_Playlist">
+      <End Role="Playlist" EntitySet="Playlist" />
+      <End Role="Party" EntitySet="Party" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Person Role_Role Permission" Association="PlaylistDEVDBModel.Store.FK_Person Role_Role Permission">
+      <End Role="Role Permission" EntitySet="Role Permission" />
+      <End Role="Person Role" EntitySet="Person Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Person_Party" Association="PlaylistDEVDBModel.Store.FK_Person_Party">
+      <End Role="Party" EntitySet="Party" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Person_Person Role" Association="PlaylistDEVDBModel.Store.FK_Person_Person Role">
+      <End Role="Person Role" EntitySet="Person Role" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Person_User Credentials" Association="PlaylistDEVDBModel.Store.FK_Person_User Credentials">
+      <End Role="User Credentials" EntitySet="User Credentials" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Playlist_Song" Association="PlaylistDEVDBModel.Store.FK_Playlist_Song">
+      <End Role="Song" EntitySet="Song" />
+      <End Role="Playlist" EntitySet="Playlist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Profile_Person" Association="PlaylistDEVDBModel.Store.FK_Profile_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Profile" EntitySet="Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User Credentials_Credential Source Code Table" Association="PlaylistDEVDBModel.Store.FK_User Credentials_Credential Source Code Table">
+      <End Role="Credential Source Code Table" EntitySet="Credential Source Code Table" />
+      <End Role="User Credentials" EntitySet="User Credentials" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Credential Source Code Table">
+    <Key>
+      <PropertyRef Name="Credential_Source_Code" />
+    </Key>
+    <Property Name="Credential_Source_Code" Type="int" Nullable="false" />
+    <Property Name="Credential_Source" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Credential_Description" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Party">
+    <Key>
+      <PropertyRef Name="Party_ID" />
+    </Key>
+    <Property Name="Party_ID" Type="int" Nullable="false" />
+    <Property Name="Playlist" Type="int" Nullable="false" />
+    <Property Name="Party_Title" Type="varchar(max)" Nullable="false" />
+    <Property Name="Participant_Count" Type="int" Nullable="false" />
+    <Property Name="Genre_Limitation" Type="varchar" MaxLength="50" />
+    <Property Name="Repeat_Contraint" Type="int" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Person_ID" />
+    </Key>
+    <Property Name="Person_ID" Type="int" Nullable="false" />
+    <Property Name="Last_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="First_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Role_ID" Type="int" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Sex" Type="bit" />
+    <Property Name="E_Mail" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="bigint" />
+    <Property Name="Facebook_Key" Type="varchar" MaxLength="50" />
+    <Property Name="Twitter_Key" Type="varchar" MaxLength="50" />
+    <Property Name="Spotify_Key" Type="varchar" MaxLength="50" />
+    <Property Name="Profile_ID" Type="int" Nullable="false" />
+    <Property Name="Party_Owner_ID" Type="int" Nullable="false" />
+    <Property Name="Party_Participant" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person Role">
+    <Key>
+      <PropertyRef Name="Person_Role_ID" />
+    </Key>
+    <Property Name="Person_Role_ID" Type="int" Nullable="false" />
+    <Property Name="Role_Title" Type="varchar(max)" Nullable="false" />
+    <Property Name="Role_Permission_Combo_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Playlist">
+    <Key>
+      <PropertyRef Name="Playlist_ID" />
+    </Key>
+    <Property Name="Playlist_ID" Type="int" Nullable="false" />
+    <Property Name="Playlist_Title" Type="varchar(max)" Nullable="false" />
+    <Property Name="Song_ID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Song_Title" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Song_Vote" Type="int" />
+    <Property Name="Party_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Profile">
+    <Key>
+      <PropertyRef Name="Person_ID" />
+      <PropertyRef Name="Profile_ID" />
+    </Key>
+    <Property Name="Person_ID" Type="int" Nullable="false" />
+    <Property Name="Profile_ID" Type="int" Nullable="false" />
+    <Property Name="Profile_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Profile_Picture" Type="image" />
+    <Property Name="Bio" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Role Permission">
+    <Key>
+      <PropertyRef Name="Role_Permission_Combo_ID" />
+    </Key>
+    <Property Name="Role_Permission_Combo_ID" Type="int" Nullable="false" />
+    <Property Name="Permission1" Type="bit" Nullable="false" />
+    <Property Name="Permission2" Type="bit" Nullable="false" />
+    <Property Name="PermissionN" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Song">
+    <Key>
+      <PropertyRef Name="Song_ID" />
+    </Key>
+    <Property Name="Song_ID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Title" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Artist" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Album" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Genre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Album_Art" Type="image" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User Credentials">
+    <Key>
+      <PropertyRef Name="User_Name" />
+    </Key>
+    <Property Name="User_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Security_Question_1" Type="varchar(max)" Nullable="false" />
+    <Property Name="Security_Answer_1" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Security_Question_2" Type="varchar(max)" Nullable="false" />
+    <Property Name="Security_Answer_2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CredentialSource" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Party_Playlist">
+    <End Role="Playlist" Type="PlaylistDEVDBModel.Store.Playlist" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Party" Type="PlaylistDEVDBModel.Store.Party" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Playlist">
+        <PropertyRef Name="Playlist_ID" />
+      </Principal>
+      <Dependent Role="Party">
+        <PropertyRef Name="Playlist" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Person Role_Role Permission">
+    <End Role="Role Permission" Type="PlaylistDEVDBModel.Store.Role Permission" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Person Role" Type="PlaylistDEVDBModel.Store.Person Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role Permission">
+        <PropertyRef Name="Role_Permission_Combo_ID" />
+      </Principal>
+      <Dependent Role="Person Role">
+        <PropertyRef Name="Role_Permission_Combo_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Person_Party">
+    <End Role="Party" Type="PlaylistDEVDBModel.Store.Party" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Person" Type="PlaylistDEVDBModel.Store.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Party">
+        <PropertyRef Name="Party_ID" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="Party_Owner_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Person_Person Role">
+    <End Role="Person Role" Type="PlaylistDEVDBModel.Store.Person Role" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Person" Type="PlaylistDEVDBModel.Store.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person Role">
+        <PropertyRef Name="Person_Role_ID" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Person_User Credentials">
+    <End Role="User Credentials" Type="PlaylistDEVDBModel.Store.User Credentials" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Person" Type="PlaylistDEVDBModel.Store.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User Credentials">
+        <PropertyRef Name="User_Name" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="User_Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Playlist_Song">
+    <End Role="Song" Type="PlaylistDEVDBModel.Store.Song" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Playlist" Type="PlaylistDEVDBModel.Store.Playlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Song">
+        <PropertyRef Name="Song_ID" />
+      </Principal>
+      <Dependent Role="Playlist">
+        <PropertyRef Name="Song_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Profile_Person">
+    <End Role="Person" Type="PlaylistDEVDBModel.Store.Person" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Profile" Type="PlaylistDEVDBModel.Store.Profile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Person_ID" />
+      </Principal>
+      <Dependent Role="Profile">
+        <PropertyRef Name="Person_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User Credentials_Credential Source Code Table">
+    <End Role="Credential Source Code Table" Type="PlaylistDEVDBModel.Store.Credential Source Code Table" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="User Credentials" Type="PlaylistDEVDBModel.Store.User Credentials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Credential Source Code Table">
+        <PropertyRef Name="Credential_Source_Code" />
+      </Principal>
+      <Dependent Role="User Credentials">
+        <PropertyRef Name="CredentialSource" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

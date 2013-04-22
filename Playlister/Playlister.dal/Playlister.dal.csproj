@@ -39,10 +39,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -104,10 +110,71 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Credential_Source_Code_Table.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Party.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Person.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Person_Role.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Playlist.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylisterDEV.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaylisterDEV.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylisterDEV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylisterDEV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaylisterDEV.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CSCTRepo.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\PartyRepo.cs" />
+    <Compile Include="Repositories\PersonRepo.cs" />
+    <Compile Include="Repositories\Person_RoleRepo.cs" />
+    <Compile Include="Repositories\PlaylistRepo.cs" />
+    <Compile Include="Repositories\ProfileRepo.cs" />
+    <Compile Include="Repositories\Role_PermissionRepo.cs" />
+    <Compile Include="Repositories\SongRepo.cs" />
+    <Compile Include="Repositories\User_CredentialRepo.cs" />
+    <Compile Include="Role_Permission.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Song.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User_Credential.cs">
+      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -131,6 +198,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="PlaylisterDEV.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PlaylisterDEV.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PlaylisterDEV.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PlaylisterDEV.edmx</DependentUpon>
+      <LastGenOutput>PlaylisterDEV.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PlaylisterDEV.edmx.diagram">
+      <DependentUpon>PlaylisterDEV.edmx</DependentUpon>
+    </Content>
+    <Content Include="PlaylisterDEV.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PlaylisterDEV.edmx</DependentUpon>
+      <LastGenOutput>PlaylisterDEV.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
