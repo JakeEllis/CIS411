@@ -56,9 +56,9 @@ $(document).ready(function () {
                     tag.setAttribute("onclick", "return iFrame(this.id);");
                     tag.dataName = responseArray.tracks[i].name;
                     
-                    var pop = document.createElement("i");
+                    @*var pop = document.createElement("i");
                     pop.className = "pop";
-                    pop.innerHTML = responseArray.tracks[i].popularity;
+                    pop.innerHTML = responseArray.tracks[i].popularity;*@
                     
                     var uri = document.createElement("i");
                     uri.className = "uri";
@@ -67,7 +67,7 @@ $(document).ready(function () {
 
                     var name = document.createElement("b");
                     name.className = "name";
-                    name.innerHTML = responseArray.tracks[i].name;
+                    name.innerHTML = " " + responseArray.tracks[i].name;
                     
                     var artistList = document.createElement("i");
                     artistList.className = "artistList";
@@ -83,9 +83,9 @@ $(document).ready(function () {
 
                     // append them all to player wrapper
                     tag.appendChild(name);
-                    tag.appendChild(pop);
+                    @*tag.appendChild(pop);*@
                     tag.appendChild(artistList);
-                    tag.appendChild(uri);
+                    @*tag.appendChild(uri);*@
                     song.appendChild(tag);
 
                     
