@@ -133,3 +133,4 @@ C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.dal\bin\Sy
 C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.dal\bin\System.Web.WebPages.Razor.xml
 C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.dal\obj\Debug\Playlister.dal.dll
 C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.dal\obj\Debug\Playlister.dal.pdb
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.dal\obj\Debug\Playlister.dal.csprojResolveAssemblyReference.cache
