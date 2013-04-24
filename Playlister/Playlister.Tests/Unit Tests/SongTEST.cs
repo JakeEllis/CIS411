@@ -11,7 +11,7 @@ namespace Playlister.Tests.Unit_Tests
     [TestClass]
     public class SongTEST
     {
-    
+
         private SongRepo songRepo;
 
         [TestInitialize]
@@ -20,35 +20,34 @@ namespace Playlister.Tests.Unit_Tests
             songRepo = new SongRepo();
             songRepo.add(new Song
             {
-                Song_ID = "3",
-                Title = "hello",
+                Song_ID = 1,
+                HREF = "asdf334",
+                Song_Name = "Pop Lock and drop it",
                 Artist = "Kissha",
-                Album = "Not Kesha",
-                Genre = "HipHop",
-                Album_Art = null
+                Popularity = "High"
             }
             );
         }
 
-        
+
         [TestMethod]
         public void songTEST()
         {
             Song song = songRepo.getById(new Song
             {
-                Song_ID = "3"
+                Song_ID = 1
             }
             );
             Assert.AreNotEqual(null, song, "");
 
-            IQueryable<Song> songs = songRepo.query(a => a.Song_ID == "3");
+            IQueryable<Song> songs = songRepo.query(a => a.Song_ID == 1);
             Assert.AreEqual(1, songs.Count());
         }
 
         [TestCleanup]
         public void clear()
         {
-            IQueryable<Song> songs = songRepo.query(a => a.Song_ID == "3");
+            IQueryable<Song> songs = songRepo.query(a => a.Song_ID == 1);
             foreach (Song item in songs.ToList<Song>())
             {
                 songRepo.remove(item);

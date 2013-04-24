@@ -16,7 +16,7 @@ namespace Playlister.dal
     public partial class PlaylisterDEV : DbContext
     {
         public PlaylisterDEV()
-            : base("name=PLaylisterDEV")
+            : base("name=PlaylisterDEV")
         {
         }
     

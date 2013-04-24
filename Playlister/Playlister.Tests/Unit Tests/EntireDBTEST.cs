@@ -68,31 +68,38 @@ namespace Playlister.Tests.Unit_Tests
             });
 
             profilerepo = new ProfileRepo();
-            profilerepo.add(new Profile{
+            profilerepo.add(new Profile
+            {
                 Person_ID = 4,
                 Profile_ID = 4,
-                Profile_Name = "4",
+                Profile_Name = "TEST",
                 Profile_Picture = null,
                 Bio = "TEST TEST"
             });
 
             personrepo = new PersonRepo();
-            personrepo.add(new Person { 
+            personrepo.add(new Person
+            {
                 Person_ID = 4,
                 Last_Name = "TEST",
                 First_Name = "TEST",
                 Role_ID = 4,
-                User_Name = "ENTIRE DB TEST",
-                Sex = true,
+                User_Name = "TEST",
+                Sex = null,
                 E_Mail = "TEST@TEST",
                 Phone = 1234567891,
-                Facebook_Key = "",
-                Twitter_Key = "",
-                Spotify_Key = "",
+                Facebook_Key = null,
+                Twitter_Key = null,
+                Spotify_Key = null,
                 Profile_ID = 4,
                 Party_Owner_ID = 4,
                 Party_Participant = 4,
-                IsActive = true
+                IsActive = true,
+                User_Password = "test",
+                Security_Question1 = "test",
+                Security_Question2 = "testtest",
+                Secuirty_Answer1 = "test",
+                Security_Answer2 = "testtest"
             });
 
         }

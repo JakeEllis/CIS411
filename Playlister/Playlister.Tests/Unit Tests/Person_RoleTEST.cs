@@ -12,11 +12,23 @@ namespace Playlister.Tests.Unit_Tests
     [TestClass]
     public class Person_RoleTEST
     {
+        private Role_PermissionRepo roleRepo;
         private Person_RoleRepo person_roleRepo;
 
         [TestInitialize]
         public void setup()
         {
+
+            roleRepo = new Role_PermissionRepo();
+            roleRepo.add(new Role_Permission
+            {
+                Role_Permission_Combo_ID = 1,
+                Permission1 = true,
+                Permission2 = true,
+                PermissionN = 1
+            });
+
+
             person_roleRepo = new Person_RoleRepo();
             person_roleRepo.add(new Person_Role
             {
@@ -45,10 +57,16 @@ namespace Playlister.Tests.Unit_Tests
         [TestInitialize]
         public void clear()
         {
-            IQueryable<Person_Role> personRoles = person_roleRepo.query(a => a.Person_Role_ID == 1);
-            foreach (Person_Role item in personRoles.ToList<Person_Role>())
+            IQueryable<Person_Role> rolesPermissions = person_roleRepo.query(a => a.Person_Role_ID == 1);
+            foreach (Person_Role item in rolesPermissions.ToList<Person_Role>())
             {
                 person_roleRepo.remove(item);
+            }
+
+            IQueryable<Role_Permission> rolePermissions = roleRepo.query(a => a.Role_Permission_Combo_ID == 1);
+            foreach (Role_Permission item in rolePermissions.ToList<Role_Permission>())
+            {
+                roleRepo.remove(item);
             }
         }
     }

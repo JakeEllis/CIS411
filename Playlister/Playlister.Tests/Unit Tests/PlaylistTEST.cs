@@ -41,7 +41,7 @@ namespace Playlister.Tests.Unit_Tests
             Assert.AreNotEqual(null, playlist, "");
 
             IQueryable<Playlist> playlists = playlistRepo.query(a => a.Playlist_ID == 1);
-            Assert.AreEqual(2, playlists.Count());
+            Assert.AreEqual(1, playlists.Count());
         }
 
         [TestCleanup]
