@@ -20,7 +20,7 @@ namespace Playlister.Tests.Unit_Tests
             role_permissionRepo = new Role_PermissionRepo();
             role_permissionRepo.add(new Role_Permission
             {
-                Role_Permission_Combo_ID = 1,
+                Role_Permission_Combo_ID = 2,
                 Permission1 = true,
                 Permission2 = true,
                 PermissionN = 1
@@ -31,15 +31,12 @@ namespace Playlister.Tests.Unit_Tests
         [TestMethod]
         public void role_permissionTEST()
         {
-            Role_Permission role_permission = role_permissionRepo.getById(new Role_Permission
+            Role_Permission role = role_permissionRepo.getById(new Role_Permission
             {
-                Role_Permission_Combo_ID = 1
+                Role_Permission_Combo_ID = 2
             }
-            );
-            Assert.AreNotEqual(null, role_permission, "");
-
-            IQueryable<Role_Permission> roles = role_permissionRepo.query(a => a.Role_Permission_Combo_ID == 1);
-            Assert.AreEqual(1, roles.Count());
+         );
+            Assert.AreNotEqual(null, role, "");
         }
 
         [TestCleanup]
@@ -53,3 +50,4 @@ namespace Playlister.Tests.Unit_Tests
         }
     }
 }
+
