@@ -1,0 +1,345 @@
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Playlister.web.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Playlister.web.pdb
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Antlr3.Runtime.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\EntityFramework.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Newtonsoft.Json.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Net.Http.Formatting.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Helpers.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Http.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Http.WebHost.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Mvc.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Optimization.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Razor.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\WebGrease.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\WebMatrix.Data.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\WebMatrix.WebData.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\EntityFramework.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Newtonsoft.Json.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Net.Http.Formatting.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Helpers.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Http.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Http.WebHost.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Mvc.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.Razor.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\WebMatrix.Data.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\WebMatrix.WebData.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.csprojResolveAssemblyReference.cache
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.dll
+C:\Users\Oliver Ray\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.pdb
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Playlister.web.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Playlister.web.pdb
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Antlr3.Runtime.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\EntityFramework.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.Infrastructure.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Newtonsoft.Json.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Net.Http.Formatting.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Helpers.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.WebHost.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Mvc.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Optimization.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Razor.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\WebGrease.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.Data.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.WebData.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\EntityFramework.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Newtonsoft.Json.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Net.Http.Formatting.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Helpers.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.WebHost.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Mvc.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Razor.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.Data.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.WebData.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.csprojResolveAssemblyReference.cache
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.dll
+C:\msysgit\cis411\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.pdb
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Playlister.web.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Playlister.web.pdb
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Antlr3.Runtime.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\EntityFramework.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Newtonsoft.Json.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Net.Http.Formatting.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Helpers.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.WebHost.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Mvc.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Optimization.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Razor.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\WebGrease.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.Data.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.WebData.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\EntityFramework.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Newtonsoft.Json.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Net.Http.Formatting.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Helpers.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Http.WebHost.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Mvc.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.Razor.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.Data.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\WebMatrix.WebData.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.csprojResolveAssemblyReference.cache
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.dll
+C:\Users\Keith\Desktop\cis411\Feux11\Playlister\Playlister.web\obj\Debug\Playlister.web.pdb
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Playlister.web.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Playlister.web.pdb
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Antlr3.Runtime.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\EntityFramework.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Optimization.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\WebGrease.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\EntityFramework.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.csprojResolveAssemblyReference.cache
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.dll
+C:\Users\Jake Ellis\Documents\CIS411-Playlister\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.pdb
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Playlister.web.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Playlister.web.pdb
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Antlr3.Runtime.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\EntityFramework.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Http.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Optimization.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\WebGrease.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\EntityFramework.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Http.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.csprojResolveAssemblyReference.cache
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.dll
+C:\Users\Seth\Documents\GitHub\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.pdb
+<<<<<<< HEAD
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Playlister.web.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Playlister.web.pdb
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Antlr3.Runtime.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\EntityFramework.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Http.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Optimization.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\WebGrease.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\EntityFramework.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Http.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.dll
+C:\Users\Oliver Ray\Desktop\CIS411_Take2\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.pdb
+=======
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Playlister.web.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Playlister.web.pdb
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Antlr3.Runtime.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\EntityFramework.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Optimization.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\WebGrease.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\EntityFramework.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Newtonsoft.Json.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Net.Http.Formatting.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Helpers.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Http.WebHost.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Mvc.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.Razor.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\System.Web.WebPages.Razor.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\WebMatrix.Data.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\WebMatrix.WebData.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.Core.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.csprojResolveAssemblyReference.cache
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.dll
+C:\Users\ENZO2588\playLister\CIS411\Playlister\Playlister.web\obj\Debug\Playlister.web.pdb
+>>>>>>> 8d2df9612f989317d0c14cd72929ee4a9c303c65

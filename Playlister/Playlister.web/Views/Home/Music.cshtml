@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Music";
+}
+
+<hgroup class="title">
+
+    <h1>@ViewBag.Title</h1>
+    <h2>@ViewBag.Message</h2>
+
+</hgroup>
+
+<article>
+    
+    <h3>Search for a track.</h3>
+    <input type="text" id="txt"/>
+    <input type="button" id="artistSearchButton" value="Search"/>
+   
+     
+     <ul id="testName">
+
+    </ul>
+       
+
+</article>
+
+<script>
+
+$(document).ready(function () {
+    $("#artistSearchButton").click(function () {
+        document.getElementById("testName").innerHTML = " ";
+        $.getJSON(buildUrl(document.getElementById('txt').value), function (data) {
+            // turn string response to JSON array
+            var trackJSON = JSON.stringify(data, null, 4);
+            var responseArray = jQuery.parseJSON(trackJSON);
+            // make sure there is a response
+            if (responseArray.tracks.length > 0) {
+
+                // get container
+                var container = document.getElementById("testName");
+
+                // iterate over each response
+                for (var i = 0; i < responseArray.tracks.length; i += 1) {
+
+                    // create the elems needed
+                    var song = document.createElement("li");
+                    song.className = "song";
+                    song.dataName = responseArray.tracks[i].name;
+
+                    var tag = document.createElement("a");
+                    tag.className = "tag";
+                    tag.dataName = responseArray.tracks[i].name;
+                    
+                    var pop = document.createElement("i");
+                    pop.className = "pop";
+                    pop.innerHTML = responseArray.tracks[i].popularity;
+                    
+                    var uri = document.createElement("i");
+                    uri.className = "uri";
+                    uri.id = "uri-" + i;
+                    uri.innerHTML = responseArray.tracks[i].href;
+
+                    var name = document.createElement("b");
+                    name.className = "name";
+                    name.innerHTML = responseArray.tracks[i].name;
+                    
+                    var artistList = document.createElement("i");
+                    artistList.className = "artistList";
+                    for (var e = 0; e < responseArray.tracks[i].artists.length; e += 1) {
+                        if (e === 0)
+                            artistList.innerHTML = responseArray.tracks[i].artists[e].name;
+                        else
+                            artistList.innerHTML + " " + responseArray.tracks[i].artists[e].name;
+                    }
+
+                    //var aTag = "<a>";
+                    //var endaTag = "</a>";
+
+
+                    // append them all to player wrapper
+                    @*song.innerHTML = aTag;*@
+                    tag.appendChild(name);
+                    tag.appendChild(pop);
+                    tag.appendChild(artistList);
+                    tag.appendChild(uri);
+                    song.appendChild(tag);
+
+                    
+                    // append player to container
+                    container.appendChild(song);
+                }
+            } 
+        
+   
+        });
+
+    });
+});
+
+function buildUrl(trackString) {
+    var url = "http://ws.spotify.com/search/1/track.json?q=" + trackString;
+    return url;
+
+
+}
+
+$("a.tag").click(function () {
+    this.getE
+
+});
+
+</script>
