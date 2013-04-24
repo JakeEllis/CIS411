@@ -17,7 +17,6 @@ namespace Playlister.dal.Repositories
         public Profile getById(Profile playlisterObject)
         {
             return _context.Profiles.Find(playlisterObject.Profile_ID);
-
         }
 
         public Profile[] getAll()

@@ -17,7 +17,6 @@ namespace Playlister.dal.Repositories
         public Role_Permission getById(Role_Permission playlisterObject)
         {
             return _context.Role_Permissions.Find(playlisterObject.Role_Permission_Combo_ID);
-
         }
 
         public Role_Permission[] getAll()
@@ -35,7 +34,6 @@ namespace Playlister.dal.Repositories
         {
             _context.Entry(playlisterObject).State = System.Data.EntityState.Modified;
             _context.SaveChanges();
-
         }
 
         public void remove(Role_Permission playlisterObject)

@@ -13,6 +13,7 @@ namespace Playlister.Tests.Unit_Tests
     public class ProfileTest
     {
         private SongRepo songrepo;
+        private BridgeRepo bridgerepo;
         private PlaylistRepo playlistrepo;
         private PartyRepo partyrepo;
         private Role_PermissionRepo role_permissionrepo;
@@ -36,12 +37,20 @@ namespace Playlister.Tests.Unit_Tests
             playlistrepo = new PlaylistRepo();
             playlistrepo.add(new Playlist
             {
-                Song_ID = "4",
-                Playlist_ID = 4,
+                Playlist_ID = 4,  
                 Playlist_Title = "mongo",
-                Party_ID = 4,
+                Song_ID = "4",
+                Song_Title = "Get on My Level",
                 Song_Vote = 1,
-                Song_Title = "Get on My Level"
+                Party_ID = 4,
+            });
+
+            bridgerepo = new BridgeRepo();
+            bridgerepo.add(new Bridge_Combo_ID
+            {
+                Bridge_Combo_ID1 = 123432,
+                Song_ID = 11111,
+                Playlist_ID = 4
             });
 
             partyrepo = new PartyRepo();
@@ -107,8 +116,6 @@ namespace Playlister.Tests.Unit_Tests
                 Profile_Picture = null,
                 Bio = "TEST TEST"
             });
-
-
         }
 
         [TestMethod]
@@ -188,6 +195,12 @@ namespace Playlister.Tests.Unit_Tests
         [TestCleanup]
         public void cleanup()
         {
+            IQueryable<Bridge_Combo_ID> bridgeIDs = bridgerepo.query(a => a.Bridge_Combo_ID1 == 123432);
+            foreach (Bridge_Combo_ID item in bridgeIDs.ToList<Bridge_Combo_ID>())
+            {
+                bridgerepo.remove(item);
+            }
+
             IQueryable<Song> songs = songrepo.query(a => a.Song_ID == 11111);
             foreach (Song item in songs.ToList<Song>())
             {
