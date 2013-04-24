@@ -12,19 +12,13 @@ namespace Playlister.dal
     using System;
     using System.Collections.Generic;
     
-    public partial class Song
+    public partial class Bridge_Combo_ID
     {
-        public Song()
-        {
-            this.Bridge_Combo_ID = new HashSet<Bridge_Combo_ID>();
-        }
-    
+        public long Bridge_Combo_ID1 { get; set; }
         public long Song_ID { get; set; }
-        public string HREF { get; set; }
-        public string Song_Name { get; set; }
-        public string Artist { get; set; }
-        public string Popularity { get; set; }
+        public int Playlist_ID { get; set; }
     
-        public virtual ICollection<Bridge_Combo_ID> Bridge_Combo_ID { get; set; }
+        public virtual Playlist Playlist { get; set; }
+        public virtual Song Song { get; set; }
     }
 }

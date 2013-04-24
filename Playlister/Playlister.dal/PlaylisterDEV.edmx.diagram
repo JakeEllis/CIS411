@@ -4,25 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="62ba773fe96a4821a53ff1692c51da0e" Name="Diagram1" ZoomLevel="72">
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Credential_Source_Code_Table" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Party" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Person" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Person_Role" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Playlist" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Profile" Width="1.5" PointX="9.75" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Role_Permission" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.Song" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.sysdiagram" Width="1.5" PointX="10.375" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlaylistDEVDBModel.User_Credential" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_User_Credentials_Credential_Source_Code_Table" ManuallyRouted="false" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_Party_Playlist" ManuallyRouted="false" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_Person_Party" ManuallyRouted="false" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_Person_Person_Role" ManuallyRouted="false" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_Person_User_Credentials" ManuallyRouted="false" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_Profile_Person" ManuallyRouted="false" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_Person_Role_Role_Permission" ManuallyRouted="false" />
-        <AssociationConnector Association="PlaylistDEVDBModel.FK_Playlist_Song" ManuallyRouted="false" />
+      <Diagram DiagramId="e9383591ad474b06b81dbe9ddfdc3d49" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Bridge_Combo_ID" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Party" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Person" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Person_Role" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Playlist" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Profile" Width="1.5" PointX="7.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Role_Permission" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Song" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="5.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Bridge_Combo_ID_Playlist" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Bridge_Combo_ID_Song" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Party_Playlist" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Person_Party" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Person_Person_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Profile_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Person_Role_Role_Permission" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

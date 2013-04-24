@@ -16,6 +16,7 @@ namespace Playlister.dal
     {
         public Playlist()
         {
+            this.Bridge_Combo_ID = new HashSet<Bridge_Combo_ID>();
             this.Parties = new HashSet<Party>();
         }
     
@@ -26,7 +27,7 @@ namespace Playlister.dal
         public Nullable<int> Song_Vote { get; set; }
         public int Party_ID { get; set; }
     
+        public virtual ICollection<Bridge_Combo_ID> Bridge_Combo_ID { get; set; }
         public virtual ICollection<Party> Parties { get; set; }
-        public virtual Song Song { get; set; }
     }
 }

@@ -1,87 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="PlaylistDEVDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="PlaylistDEV" p1:LazyLoadingEnabled="true">
-    <EntitySet Name="Credential_Source_Code_Tables" EntityType="PlaylistDEVDBModel.Credential_Source_Code_Table" />
-    <EntitySet Name="Parties" EntityType="PlaylistDEVDBModel.Party" />
-    <EntitySet Name="People" EntityType="PlaylistDEVDBModel.Person" />
-    <EntitySet Name="Person_Roles" EntityType="PlaylistDEVDBModel.Person_Role" />
-    <EntitySet Name="Playlists" EntityType="PlaylistDEVDBModel.Playlist" />
-    <EntitySet Name="Profiles" EntityType="PlaylistDEVDBModel.Profile" />
-    <EntitySet Name="Role_Permissions" EntityType="PlaylistDEVDBModel.Role_Permission" />
-    <EntitySet Name="Songs" EntityType="PlaylistDEVDBModel.Song" />
-    <EntitySet Name="sysdiagrams" EntityType="PlaylistDEVDBModel.sysdiagram" />
-    <EntitySet Name="User_Credentials" EntityType="PlaylistDEVDBModel.User_Credential" />
-    <AssociationSet Name="FK_User_Credentials_Credential_Source_Code_Table" Association="PlaylistDEVDBModel.FK_User_Credentials_Credential_Source_Code_Table">
-      <End Role="Credential_Source_Code_Table" EntitySet="Credential_Source_Code_Tables" />
-      <End Role="User_Credentials" EntitySet="User_Credentials" />
+<Schema Namespace="Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities2" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Bridge_Combo_ID" EntityType="Model.Bridge_Combo_ID" />
+    <EntitySet Name="Parties" EntityType="Model.Party" />
+    <EntitySet Name="People" EntityType="Model.Person" />
+    <EntitySet Name="Person_Roles" EntityType="Model.Person_Role" />
+    <EntitySet Name="Playlists" EntityType="Model.Playlist" />
+    <EntitySet Name="Profiles" EntityType="Model.Profile" />
+    <EntitySet Name="Role_Permissions" EntityType="Model.Role_Permission" />
+    <EntitySet Name="Songs" EntityType="Model.Song" />
+    <EntitySet Name="sysdiagrams" EntityType="Model.sysdiagram" />
+    <AssociationSet Name="FK_Bridge_Combo_ID_Playlist" Association="Model.FK_Bridge_Combo_ID_Playlist">
+      <End Role="Playlist" EntitySet="Playlists" />
+      <End Role="Bridge_Combo_ID" EntitySet="Bridge_Combo_ID" />
     </AssociationSet>
-    <AssociationSet Name="FK_Party_Playlist" Association="PlaylistDEVDBModel.FK_Party_Playlist">
+    <AssociationSet Name="FK_Bridge_Combo_ID_Song" Association="Model.FK_Bridge_Combo_ID_Song">
+      <End Role="Song" EntitySet="Songs" />
+      <End Role="Bridge_Combo_ID" EntitySet="Bridge_Combo_ID" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Party_Playlist" Association="Model.FK_Party_Playlist">
       <End Role="Playlist" EntitySet="Playlists" />
       <End Role="Party" EntitySet="Parties" />
     </AssociationSet>
-    <AssociationSet Name="FK_Person_Party" Association="PlaylistDEVDBModel.FK_Person_Party">
+    <AssociationSet Name="FK_Person_Party" Association="Model.FK_Person_Party">
       <End Role="Party" EntitySet="Parties" />
       <End Role="Person" EntitySet="People" />
     </AssociationSet>
-    <AssociationSet Name="FK_Person_Person_Role" Association="PlaylistDEVDBModel.FK_Person_Person_Role">
+    <AssociationSet Name="FK_Person_Person_Role" Association="Model.FK_Person_Person_Role">
       <End Role="Person_Role" EntitySet="Person_Roles" />
       <End Role="Person" EntitySet="People" />
     </AssociationSet>
-    <AssociationSet Name="FK_Person_User_Credentials" Association="PlaylistDEVDBModel.FK_Person_User_Credentials">
-      <End Role="User_Credentials" EntitySet="User_Credentials" />
-      <End Role="Person" EntitySet="People" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Profile_Person" Association="PlaylistDEVDBModel.FK_Profile_Person">
+    <AssociationSet Name="FK_Profile_Person" Association="Model.FK_Profile_Person">
       <End Role="Person" EntitySet="People" />
       <End Role="Profile" EntitySet="Profiles" />
     </AssociationSet>
-    <AssociationSet Name="FK_Person_Role_Role_Permission" Association="PlaylistDEVDBModel.FK_Person_Role_Role_Permission">
+    <AssociationSet Name="FK_Person_Role_Role_Permission" Association="Model.FK_Person_Role_Role_Permission">
       <End Role="Role_Permission" EntitySet="Role_Permissions" />
       <End Role="Person_Role" EntitySet="Person_Roles" />
     </AssociationSet>
-    <AssociationSet Name="FK_Playlist_Song" Association="PlaylistDEVDBModel.FK_Playlist_Song">
-      <End Role="Song" EntitySet="Songs" />
-      <End Role="Playlist" EntitySet="Playlists" />
-    </AssociationSet>
-    <FunctionImport Name="sp_alterdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_creatediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_dropdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(PlaylistDEVDBModel.sp_helpdiagramdefinition_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(PlaylistDEVDBModel.sp_helpdiagrams_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_renamediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="new_diagramname" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="sp_upgraddiagrams" />
   </EntityContainer>
-  <EntityType Name="Credential_Source_Code_Table">
+  <EntityType Name="Bridge_Combo_ID">
     <Key>
-      <PropertyRef Name="Credential_Source_Code" />
+      <PropertyRef Name="Bridge_Combo_ID1" />
     </Key>
-    <Property Name="Credential_Source_Code" Type="Int32" Nullable="false" />
-    <Property Name="Credential_Source" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Credential_Description" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="User_Credentials" Relationship="PlaylistDEVDBModel.FK_User_Credentials_Credential_Source_Code_Table" FromRole="Credential_Source_Code_Table" ToRole="User_Credentials" />
+    <Property Name="Bridge_Combo_ID1" Type="Int64" Nullable="false" />
+    <Property Name="Song_ID" Type="Int64" Nullable="false" />
+    <Property Name="Playlist_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Playlist" Relationship="Model.FK_Bridge_Combo_ID_Playlist" FromRole="Bridge_Combo_ID" ToRole="Playlist" />
+    <NavigationProperty Name="Song" Relationship="Model.FK_Bridge_Combo_ID_Song" FromRole="Bridge_Combo_ID" ToRole="Song" />
   </EntityType>
   <EntityType Name="Party">
     <Key>
@@ -93,8 +59,8 @@
     <Property Name="Participant_Count" Type="Int32" Nullable="false" />
     <Property Name="Genre_Limitation" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Repeat_Contraint" Type="Int32" />
-    <NavigationProperty Name="Playlist1" Relationship="PlaylistDEVDBModel.FK_Party_Playlist" FromRole="Party" ToRole="Playlist" />
-    <NavigationProperty Name="People" Relationship="PlaylistDEVDBModel.FK_Person_Party" FromRole="Party" ToRole="Person" />
+    <NavigationProperty Name="Playlist1" Relationship="Model.FK_Party_Playlist" FromRole="Party" ToRole="Playlist" />
+    <NavigationProperty Name="People" Relationship="Model.FK_Person_Party" FromRole="Party" ToRole="Person" />
   </EntityType>
   <EntityType Name="Person">
     <Key>
@@ -115,10 +81,14 @@
     <Property Name="Party_Owner_ID" Type="Int32" Nullable="false" />
     <Property Name="Party_Participant" Type="Int32" />
     <Property Name="IsActive" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="Party" Relationship="PlaylistDEVDBModel.FK_Person_Party" FromRole="Person" ToRole="Party" />
-    <NavigationProperty Name="Person_Role" Relationship="PlaylistDEVDBModel.FK_Person_Person_Role" FromRole="Person" ToRole="Person_Role" />
-    <NavigationProperty Name="User_Credentials" Relationship="PlaylistDEVDBModel.FK_Person_User_Credentials" FromRole="Person" ToRole="User_Credentials" />
-    <NavigationProperty Name="Profiles" Relationship="PlaylistDEVDBModel.FK_Profile_Person" FromRole="Person" ToRole="Profile" />
+    <Property Name="User_Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Question1" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Secuirty_Answer1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Question2" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Answer2" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Party" Relationship="Model.FK_Person_Party" FromRole="Person" ToRole="Party" />
+    <NavigationProperty Name="Person_Role" Relationship="Model.FK_Person_Person_Role" FromRole="Person" ToRole="Person_Role" />
+    <NavigationProperty Name="Profiles" Relationship="Model.FK_Profile_Person" FromRole="Person" ToRole="Profile" />
   </EntityType>
   <EntityType Name="Person_Role">
     <Key>
@@ -127,8 +97,8 @@
     <Property Name="Person_Role_ID" Type="Int32" Nullable="false" />
     <Property Name="Role_Title" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="Role_Permission_Combo_ID" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="People" Relationship="PlaylistDEVDBModel.FK_Person_Person_Role" FromRole="Person_Role" ToRole="Person" />
-    <NavigationProperty Name="Role_Permission" Relationship="PlaylistDEVDBModel.FK_Person_Role_Role_Permission" FromRole="Person_Role" ToRole="Role_Permission" />
+    <NavigationProperty Name="People" Relationship="Model.FK_Person_Person_Role" FromRole="Person_Role" ToRole="Person" />
+    <NavigationProperty Name="Role_Permission" Relationship="Model.FK_Person_Role_Role_Permission" FromRole="Person_Role" ToRole="Role_Permission" />
   </EntityType>
   <EntityType Name="Playlist">
     <Key>
@@ -136,12 +106,12 @@
     </Key>
     <Property Name="Playlist_ID" Type="Int32" Nullable="false" />
     <Property Name="Playlist_Title" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <Property Name="Song_ID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Song_ID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Song_Title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Song_Vote" Type="Int32" />
     <Property Name="Party_ID" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Parties" Relationship="PlaylistDEVDBModel.FK_Party_Playlist" FromRole="Playlist" ToRole="Party" />
-    <NavigationProperty Name="Song" Relationship="PlaylistDEVDBModel.FK_Playlist_Song" FromRole="Playlist" ToRole="Song" />
+    <NavigationProperty Name="Bridge_Combo_ID" Relationship="Model.FK_Bridge_Combo_ID_Playlist" FromRole="Playlist" ToRole="Bridge_Combo_ID" />
+    <NavigationProperty Name="Parties" Relationship="Model.FK_Party_Playlist" FromRole="Playlist" ToRole="Party" />
   </EntityType>
   <EntityType Name="Profile">
     <Key>
@@ -153,7 +123,7 @@
     <Property Name="Profile_Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Profile_Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="Bio" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="Person" Relationship="PlaylistDEVDBModel.FK_Profile_Person" FromRole="Profile" ToRole="Person" />
+    <NavigationProperty Name="Person" Relationship="Model.FK_Profile_Person" FromRole="Profile" ToRole="Person" />
   </EntityType>
   <EntityType Name="Role_Permission">
     <Key>
@@ -163,19 +133,18 @@
     <Property Name="Permission1" Type="Boolean" Nullable="false" />
     <Property Name="Permission2" Type="Boolean" Nullable="false" />
     <Property Name="PermissionN" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Person_Role" Relationship="PlaylistDEVDBModel.FK_Person_Role_Role_Permission" FromRole="Role_Permission" ToRole="Person_Role" />
+    <NavigationProperty Name="Person_Role" Relationship="Model.FK_Person_Role_Role_Permission" FromRole="Role_Permission" ToRole="Person_Role" />
   </EntityType>
   <EntityType Name="Song">
     <Key>
       <PropertyRef Name="Song_ID" />
     </Key>
-    <Property Name="Song_ID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Artist" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Album" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Genre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Album_Art" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <NavigationProperty Name="Playlists" Relationship="PlaylistDEVDBModel.FK_Playlist_Song" FromRole="Song" ToRole="Playlist" />
+    <Property Name="Song_ID" Type="Int64" Nullable="false" />
+    <Property Name="HREF" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Song_Name" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Artist" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Popularity" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Bridge_Combo_ID" Relationship="Model.FK_Bridge_Combo_ID_Song" FromRole="Song" ToRole="Bridge_Combo_ID" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -187,39 +156,35 @@
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
-  <EntityType Name="User_Credential">
-    <Key>
-      <PropertyRef Name="User_Name" />
-    </Key>
-    <Property Name="User_Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Security_Question_1" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <Property Name="Security_Answer_1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Security_Question_2" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <Property Name="Security_Answer_2" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="CredentialSource" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Credential_Source_Code_Table" Relationship="PlaylistDEVDBModel.FK_User_Credentials_Credential_Source_Code_Table" FromRole="User_Credentials" ToRole="Credential_Source_Code_Table" />
-    <NavigationProperty Name="People" Relationship="PlaylistDEVDBModel.FK_Person_User_Credentials" FromRole="User_Credentials" ToRole="Person" />
-  </EntityType>
-  <Association Name="FK_User_Credentials_Credential_Source_Code_Table">
-    <End Role="Credential_Source_Code_Table" Type="PlaylistDEVDBModel.Credential_Source_Code_Table" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="User_Credentials" Type="PlaylistDEVDBModel.User_Credential" Multiplicity="*" />
+  <Association Name="FK_Bridge_Combo_ID_Playlist">
+    <End Role="Playlist" Type="Model.Playlist" Multiplicity="1" />
+    <End Role="Bridge_Combo_ID" Type="Model.Bridge_Combo_ID" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Credential_Source_Code_Table">
-        <PropertyRef Name="Credential_Source_Code" />
+      <Principal Role="Playlist">
+        <PropertyRef Name="Playlist_ID" />
       </Principal>
-      <Dependent Role="User_Credentials">
-        <PropertyRef Name="CredentialSource" />
+      <Dependent Role="Bridge_Combo_ID">
+        <PropertyRef Name="Playlist_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bridge_Combo_ID_Song">
+    <End Role="Song" Type="Model.Song" Multiplicity="1" />
+    <End Role="Bridge_Combo_ID" Type="Model.Bridge_Combo_ID" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Song">
+        <PropertyRef Name="Song_ID" />
+      </Principal>
+      <Dependent Role="Bridge_Combo_ID">
+        <PropertyRef Name="Song_ID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Party_Playlist">
-    <End Role="Playlist" Type="PlaylistDEVDBModel.Playlist" Multiplicity="1">
+    <End Role="Playlist" Type="Model.Playlist" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="Party" Type="PlaylistDEVDBModel.Party" Multiplicity="*" />
+    <End Role="Party" Type="Model.Party" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Playlist">
         <PropertyRef Name="Playlist_ID" />
@@ -230,10 +195,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Person_Party">
-    <End Role="Party" Type="PlaylistDEVDBModel.Party" Multiplicity="1">
+    <End Role="Party" Type="Model.Party" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="Person" Type="PlaylistDEVDBModel.Person" Multiplicity="*" />
+    <End Role="Person" Type="Model.Person" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Party">
         <PropertyRef Name="Party_ID" />
@@ -244,10 +209,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Person_Person_Role">
-    <End Role="Person_Role" Type="PlaylistDEVDBModel.Person_Role" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="Person" Type="PlaylistDEVDBModel.Person" Multiplicity="*" />
+    <End Role="Person_Role" Type="Model.Person_Role" Multiplicity="1" />
+    <End Role="Person" Type="Model.Person" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Person_Role">
         <PropertyRef Name="Person_Role_ID" />
@@ -257,25 +220,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Person_User_Credentials">
-    <End Role="User_Credentials" Type="PlaylistDEVDBModel.User_Credential" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="Person" Type="PlaylistDEVDBModel.Person" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User_Credentials">
-        <PropertyRef Name="User_Name" />
-      </Principal>
-      <Dependent Role="Person">
-        <PropertyRef Name="User_Name" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Profile_Person">
-    <End Role="Person" Type="PlaylistDEVDBModel.Person" Multiplicity="1">
+    <End Role="Person" Type="Model.Person" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="Profile" Type="PlaylistDEVDBModel.Profile" Multiplicity="*" />
+    <End Role="Profile" Type="Model.Profile" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Person">
         <PropertyRef Name="Person_ID" />
@@ -286,10 +235,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Person_Role_Role_Permission">
-    <End Role="Role_Permission" Type="PlaylistDEVDBModel.Role_Permission" Multiplicity="1">
+    <End Role="Role_Permission" Type="Model.Role_Permission" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="Person_Role" Type="PlaylistDEVDBModel.Person_Role" Multiplicity="*" />
+    <End Role="Person_Role" Type="Model.Person_Role" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Role_Permission">
         <PropertyRef Name="Role_Permission_Combo_ID" />
@@ -299,29 +248,4 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Playlist_Song">
-    <End Role="Song" Type="PlaylistDEVDBModel.Song" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="Playlist" Type="PlaylistDEVDBModel.Playlist" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Song">
-        <PropertyRef Name="Song_ID" />
-      </Principal>
-      <Dependent Role="Playlist">
-        <PropertyRef Name="Song_ID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <ComplexType Name="sp_helpdiagramdefinition_Result">
-    <Property Type="Int32" Name="version" Nullable="true" />
-    <Property Type="Binary" Name="definition" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="sp_helpdiagrams_Result">
-    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
-    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
-    <Property Type="Int32" Name="ID" Nullable="false" />
-    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
-    <Property Type="Int32" Name="OwnerID" Nullable="false" />
-  </ComplexType>
 </Schema>

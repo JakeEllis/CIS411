@@ -94,7 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Unit Tests\CSCT_Test.cs" />
     <Compile Include="Unit Tests\EntireDBTEST.cs" />
     <Compile Include="Unit Tests\LoginTEST.cs" />
     <Compile Include="Unit Tests\PartyTEST.cs" />
@@ -103,8 +102,6 @@
     <Compile Include="Unit Tests\PlaylistTEST.cs" />
     <Compile Include="Unit Tests\ProfileTEST.cs" />
     <Compile Include="Unit Tests\Role_PermissionTEST.cs" />
-    <Compile Include="Unit Tests\SongTEST.cs" />
-    <Compile Include="Unit Tests\User_CredentialTEST.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

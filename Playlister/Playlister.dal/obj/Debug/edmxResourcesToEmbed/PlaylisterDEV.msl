@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="PlaylistDEVDBModelStoreContainer" CdmEntityContainer="PlaylistDEV">
-    <EntitySetMapping Name="Credential_Source_Code_Tables">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Credential_Source_Code_Table">
-        <MappingFragment StoreEntitySet="Credential Source Code Table">
-          <ScalarProperty Name="Credential_Source_Code" ColumnName="Credential_Source_Code" />
-          <ScalarProperty Name="Credential_Source" ColumnName="Credential_Source" />
-          <ScalarProperty Name="Credential_Description" ColumnName="Credential_Description" />
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities2">
+    <EntitySetMapping Name="Bridge_Combo_ID">
+      <EntityTypeMapping TypeName="Model.Bridge_Combo_ID">
+        <MappingFragment StoreEntitySet="Bridge_Combo_ID">
+          <ScalarProperty Name="Bridge_Combo_ID1" ColumnName="Bridge_Combo_ID" />
+          <ScalarProperty Name="Song_ID" ColumnName="Song_ID" />
+          <ScalarProperty Name="Playlist_ID" ColumnName="Playlist_ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Parties">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Party">
+      <EntityTypeMapping TypeName="Model.Party">
         <MappingFragment StoreEntitySet="Party">
           <ScalarProperty Name="Party_ID" ColumnName="Party_ID" />
           <ScalarProperty Name="Playlist" ColumnName="Playlist" />
@@ -23,7 +23,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="People">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Person">
+      <EntityTypeMapping TypeName="Model.Person">
         <MappingFragment StoreEntitySet="Person">
           <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
           <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
@@ -40,11 +40,16 @@
           <ScalarProperty Name="Party_Owner_ID" ColumnName="Party_Owner_ID" />
           <ScalarProperty Name="Party_Participant" ColumnName="Party_Participant" />
           <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="Security_Question1" ColumnName="Security_Question1" />
+          <ScalarProperty Name="Secuirty_Answer1" ColumnName="Secuirty_Answer1" />
+          <ScalarProperty Name="Security_Question2" ColumnName="Security_Question2" />
+          <ScalarProperty Name="Security_Answer2" ColumnName="Security_Answer2" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Person_Roles">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Person_Role">
+      <EntityTypeMapping TypeName="Model.Person_Role">
         <MappingFragment StoreEntitySet="Person Role">
           <ScalarProperty Name="Person_Role_ID" ColumnName="Person_Role_ID" />
           <ScalarProperty Name="Role_Title" ColumnName="Role_Title" />
@@ -53,7 +58,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Playlists">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Playlist">
+      <EntityTypeMapping TypeName="Model.Playlist">
         <MappingFragment StoreEntitySet="Playlist">
           <ScalarProperty Name="Playlist_ID" ColumnName="Playlist_ID" />
           <ScalarProperty Name="Playlist_Title" ColumnName="Playlist_Title" />
@@ -65,7 +70,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Profiles">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Profile">
+      <EntityTypeMapping TypeName="Model.Profile">
         <MappingFragment StoreEntitySet="Profile">
           <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
           <ScalarProperty Name="Profile_ID" ColumnName="Profile_ID" />
@@ -76,7 +81,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Role_Permissions">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Role_Permission">
+      <EntityTypeMapping TypeName="Model.Role_Permission">
         <MappingFragment StoreEntitySet="Role Permission">
           <ScalarProperty Name="Role_Permission_Combo_ID" ColumnName="Role_Permission_Combo_ID" />
           <ScalarProperty Name="Permission1" ColumnName="Permission1" />
@@ -86,19 +91,18 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Songs">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.Song">
+      <EntityTypeMapping TypeName="Model.Song">
         <MappingFragment StoreEntitySet="Song">
           <ScalarProperty Name="Song_ID" ColumnName="Song_ID" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="HREF" ColumnName="HREF" />
+          <ScalarProperty Name="Song_Name" ColumnName="Song_Name" />
           <ScalarProperty Name="Artist" ColumnName="Artist" />
-          <ScalarProperty Name="Album" ColumnName="Album" />
-          <ScalarProperty Name="Genre" ColumnName="Genre" />
-          <ScalarProperty Name="Album_Art" ColumnName="Album_Art" />
+          <ScalarProperty Name="Popularity" ColumnName="Popularity" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.sysdiagram">
+      <EntityTypeMapping TypeName="Model.sysdiagram">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -108,42 +112,5 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="User_Credentials">
-      <EntityTypeMapping TypeName="PlaylistDEVDBModel.User_Credential">
-        <MappingFragment StoreEntitySet="User Credentials">
-          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Security_Question_1" ColumnName="Security_Question_1" />
-          <ScalarProperty Name="Security_Answer_1" ColumnName="Security_Answer_1" />
-          <ScalarProperty Name="Security_Question_2" ColumnName="Security_Question_2" />
-          <ScalarProperty Name="Security_Answer_2" ColumnName="Security_Answer_2" />
-          <ScalarProperty Name="CredentialSource" ColumnName="CredentialSource" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="PlaylistDEVDBModel.Store.sp_alterdiagram" />
-    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="PlaylistDEVDBModel.Store.sp_creatediagram" />
-    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="PlaylistDEVDBModel.Store.sp_dropdiagram" />
-    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="PlaylistDEVDBModel.Store.sp_helpdiagramdefinition">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="PlaylistDEVDBModel.sp_helpdiagramdefinition_Result">
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="definition" ColumnName="definition" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="PlaylistDEVDBModel.Store.sp_helpdiagrams">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="PlaylistDEVDBModel.sp_helpdiagrams_Result">
-          <ScalarProperty Name="Database" ColumnName="Database" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Owner" ColumnName="Owner" />
-          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="PlaylistDEVDBModel.Store.sp_renamediagram" />
-    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="PlaylistDEVDBModel.Store.sp_upgraddiagrams" />
   </EntityContainerMapping>
 </Mapping>

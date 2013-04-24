@@ -34,10 +34,14 @@ namespace Playlister.dal
         public int Party_Owner_ID { get; set; }
         public Nullable<int> Party_Participant { get; set; }
         public bool IsActive { get; set; }
+        public string User_Password { get; set; }
+        public string Security_Question1 { get; set; }
+        public string Secuirty_Answer1 { get; set; }
+        public string Security_Question2 { get; set; }
+        public string Security_Answer2 { get; set; }
     
         public virtual Party Party { get; set; }
         public virtual Person_Role Person_Role { get; set; }
-        public virtual User_Credential User_Credentials { get; set; }
         public virtual ICollection<Profile> Profiles { get; set; }
     }
 }

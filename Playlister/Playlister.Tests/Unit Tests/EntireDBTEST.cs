@@ -17,8 +17,6 @@ namespace Playlister.Tests.Unit_Tests
         private PartyRepo partyrepo;
         private Role_PermissionRepo role_permissionrepo;
         private Person_RoleRepo personrolerepo;
-        private CSCTRepo csctrepo;
-        private User_CredentialRepo user_cedentialrepo;
         private ProfileRepo profilerepo;
         private PersonRepo personrepo;
 
@@ -27,12 +25,11 @@ namespace Playlister.Tests.Unit_Tests
         {
             songrepo = new SongRepo();
             songrepo.add(new Song {
-                Song_ID = "4",
-                Title = "Get on My Level",
+                Song_ID = 11111,
+                HREF = "3240asfsadf92g342",
+                Song_Name = "Get on My Level",
                 Artist = "Steven",
-                Album = "LOLS",
-                Genre = "dfsd",
-                Album_Art = null,
+                Popularity = "High"
             });
 
             playlistrepo = new PlaylistRepo();
@@ -68,24 +65,6 @@ namespace Playlister.Tests.Unit_Tests
                 Person_Role_ID = 4,
                 Role_Title = "TEST",
                 Role_Permission_Combo_ID = 4
-            });
-
-            csctrepo = new CSCTRepo();
-            csctrepo.add(new Credential_Source_Code_Table{
-                Credential_Source_Code = 4,
-                Credential_Source = "TEST",
-                Credential_Description = "TEST TEST"
-            });
-
-            user_cedentialrepo = new User_CredentialRepo();
-            user_cedentialrepo.add(new User_Credential
-            {
-                User_Name = "TEST",
-                Password = "TEST",
-                Security_Question_1 = "TEST",
-                Security_Question_2 = "TEST",
-                Security_Answer_1 = "Test",
-                Security_Answer_2 = "TEST"
             });
 
             profilerepo = new ProfileRepo();

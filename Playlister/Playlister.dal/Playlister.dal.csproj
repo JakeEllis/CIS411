@@ -110,7 +110,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Credential_Source_Code_Table.cs">
+    <Compile Include="Bridge_Combo_ID.cs">
       <DependentUpon>PlaylisterDEV.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -147,7 +147,6 @@
       <DependentUpon>PlaylisterDEV.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\CSCTRepo.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\PartyRepo.cs" />
     <Compile Include="Repositories\PersonRepo.cs" />
@@ -155,24 +154,16 @@
     <Compile Include="Repositories\PlaylistRepo.cs" />
     <Compile Include="Repositories\ProfileRepo.cs" />
     <Compile Include="Repositories\Role_PermissionRepo.cs" />
-    <Compile Include="Repositories\SongRepo.cs" />
-    <Compile Include="Repositories\User_CredentialRepo.cs" />
+    <Compile Include="Repositories\SongRepo.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Role_Permission.cs">
       <DependentUpon>PlaylisterDEV.tt</DependentUpon>
     </Compile>
     <Compile Include="Song.cs">
       <DependentUpon>PlaylisterDEV.tt</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
-    </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>PlaylisterDEV.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User_Credential.cs">
       <DependentUpon>PlaylisterDEV.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -180,7 +171,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="db_Scripts\Playlister.sql" />
+    <Content Include="db_Scripts\script.sql" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -198,6 +189,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="PlaylisterDEV.edmx">
@@ -219,9 +213,6 @@
       <DependentUpon>PlaylisterDEV.edmx</DependentUpon>
       <LastGenOutput>PlaylisterDEV.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

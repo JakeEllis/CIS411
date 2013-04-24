@@ -32,7 +32,12 @@ namespace Playlister.Tests.Unit_Tests
                 Profile_ID = 12345,
                 Party_Owner_ID = 918,
                 Party_Participant = 1,
-                IsActive = true
+                IsActive = true,
+                User_Password = "test",
+                Security_Question1 = "Favorite Color?",
+                Secuirty_Answer1 = "red",
+                Security_Question2 = "Hometown?",
+                Security_Answer2 = "Louisville",
 
             }
             );
@@ -40,6 +45,7 @@ namespace Playlister.Tests.Unit_Tests
             personRepo = new PersonRepo();
             personRepo.add(new Person
             {
+                Person_ID = 2,
                 First_Name = "J",
                 Last_Name = "E",
                 Role_ID = 2,
@@ -50,7 +56,12 @@ namespace Playlister.Tests.Unit_Tests
                 Twitter_Key = "Twit",
                 Profile_ID = 678910,
                 Party_Owner_ID = 500,
-                Party_Participant = 2
+                Party_Participant = 2,
+                User_Password = "readonly",
+                Security_Question1 = "Favorite Color?",
+                Secuirty_Answer1 = "blue",
+                Security_Question2 = "Hometown?",
+                Security_Answer2 = "Lexington",
             }
             );
 
