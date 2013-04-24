@@ -2,12 +2,15 @@
     ViewBag.Title = "Music";
 }
 
-<hgroup class="title">
+<hgroup class="title" id="title">
 
     <h1>@ViewBag.Title</h1>
     <h2>@ViewBag.Message</h2>
 
 </hgroup>
+<div id="playButton">
+
+</div>
 
 <article>
     
@@ -48,6 +51,9 @@ $(document).ready(function () {
 
                     var tag = document.createElement("a");
                     tag.className = "tag";
+                    tag.id = responseArray.tracks[i].href;
+                    tag.setAttribute("href", "#title");
+                    tag.setAttribute("onclick", "return iFrame(this.id);");
                     tag.dataName = responseArray.tracks[i].name;
                     
                     var pop = document.createElement("i");
@@ -66,18 +72,16 @@ $(document).ready(function () {
                     var artistList = document.createElement("i");
                     artistList.className = "artistList";
                     for (var e = 0; e < responseArray.tracks[i].artists.length; e += 1) {
-                        if (e === 0)
+                        if (e === 0) {
                             artistList.innerHTML = responseArray.tracks[i].artists[e].name;
-                        else
+                        }
+                        else{
                             artistList.innerHTML + " " + responseArray.tracks[i].artists[e].name;
+                            }
                     }
-
-                    //var aTag = "<a>";
-                    //var endaTag = "</a>";
 
 
                     // append them all to player wrapper
-                    @*song.innerHTML = aTag;*@
                     tag.appendChild(name);
                     tag.appendChild(pop);
                     tag.appendChild(artistList);
@@ -99,13 +103,12 @@ $(document).ready(function () {
 function buildUrl(trackString) {
     var url = "http://ws.spotify.com/search/1/track.json?q=" + trackString;
     return url;
-
-
 }
 
-$("a.tag").click(function () {
-    this.getE
-
-});
+function iFrame(id) {
+    var playFrame = '<iframe src="https://embed.spotify.com/?uri=' + id + '" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
+    $("#playButton").empty();
+    $("#playButton").append(playFrame);
+}
 
 </script>
