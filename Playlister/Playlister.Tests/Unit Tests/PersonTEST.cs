@@ -12,83 +12,200 @@ namespace Playlister.Tests.Unit_Tests
     public class PersonTEST
     {
 
-        private PersonRepo personRepo;
+        private SongRepo songrepo;
+        private PlaylistRepo playlistrepo;
+        private PartyRepo partyrepo;
+        private Role_PermissionRepo role_permissionrepo;
+        private Person_RoleRepo personrolerepo;
+        private PersonRepo personrepo;
 
         [TestInitialize]
         public void setup()
         {
-            personRepo = new PersonRepo();
-            personRepo.add(new Person
+            songrepo = new SongRepo();
+            songrepo.add(new Song
             {
-                Person_ID = 1,
-                First_Name = "Jake",
-                Last_Name = "Ellis",
-                Role_ID = 1,
-                User_Name = "McLovin",
-                E_Mail = "jmelli12@gmail.com",
-                Phone = 1111, //phone number should probably be a long not an int
-                Facebook_Key = "FB",
-                Twitter_Key = "TW",
-                Profile_ID = 12345,
-                Party_Owner_ID = 918,
-                Party_Participant = 1,
+                Song_ID = 11111,
+                HREF = "3240asfsadf92g342",
+                Song_Name = "Get on My Level",
+                Artist = "Steven",
+                Popularity = "High"
+            });
+
+            playlistrepo = new PlaylistRepo();
+            playlistrepo.add(new Playlist
+            {
+                Song_ID = "4",
+                Playlist_ID = 4,
+                Playlist_Title = "mongo",
+                Party_ID = 4,
+                Song_Vote = 1,
+                Song_Title = "Get on My Level"
+            });
+
+            partyrepo = new PartyRepo();
+            partyrepo.add(new Party
+            {
+                Party_ID = 4,
+                Playlist = 4,
+                Party_Title = "TEST",
+                Participant_Count = 4,
+                Genre_Limitation = "4",
+                Repeat_Contraint = 1
+            });
+
+            role_permissionrepo = new Role_PermissionRepo();
+            role_permissionrepo.add(new Role_Permission
+            {
+                Role_Permission_Combo_ID = 4,
+                Permission1 = true,
+                Permission2 = true,
+                PermissionN = 4
+            });
+
+            personrolerepo = new Person_RoleRepo();
+            personrolerepo.add(new Person_Role
+            {
+                Person_Role_ID = 4,
+                Role_Title = "TEST",
+                Role_Permission_Combo_ID = 4
+            });
+
+
+            personrepo = new PersonRepo();
+            personrepo.add(new Person
+            {
+                Person_ID = 4,
+                Last_Name = "TEST",
+                First_Name = "TEST",
+                Role_ID = 4,
+                User_Name = "TEST",
+                Sex = null,
+                E_Mail = "TEST@TEST",
+                Phone = 1234567891,
+                Facebook_Key = null,
+                Twitter_Key = null,
+                Spotify_Key = null,
+                Profile_ID = 4,
+                Party_Owner_ID = 4,
+                Party_Participant = 4,
                 IsActive = true,
                 User_Password = "test",
-                Security_Question1 = "Favorite Color?",
-                Secuirty_Answer1 = "red",
-                Security_Question2 = "Hometown?",
-                Security_Answer2 = "Louisville",
+                Security_Question1 = "test",
+                Security_Question2 = "testtest",
+                Secuirty_Answer1 = "test",
+                Security_Answer2 = "testtest"
+            });
 
-            }
-            );
-
-            personRepo = new PersonRepo();
-            personRepo.add(new Person
-            {
-                Person_ID = 2,
-                First_Name = "J",
-                Last_Name = "E",
-                Role_ID = 2,
-                User_Name = "McMuffin",
-                E_Mail = "jmelli12@web.com",
-                Phone = 2222, //phone number should probably be a long not an int
-                Facebook_Key = "Face",
-                Twitter_Key = "Twit",
-                Profile_ID = 678910,
-                Party_Owner_ID = 500,
-                Party_Participant = 2,
-                User_Password = "readonly",
-                Security_Question1 = "Favorite Color?",
-                Secuirty_Answer1 = "blue",
-                Security_Question2 = "Hometown?",
-                Security_Answer2 = "Lexington",
-            }
-            );
 
         }
 
         [TestMethod]
-        public void personTEST()
+        public void Person_TEST()
         {
-            Person person = personRepo.getById(new Person
+            Song song = songrepo.getById(new Song
             {
-                Person_ID = 1
+                Song_ID = 11111
+            }
+           );
+            Assert.AreNotEqual(null, song, "");
+
+            Playlist playlist = playlistrepo.getById(new Playlist
+            {
+                Playlist_ID = 4
+            }
+           );
+            Assert.AreNotEqual(null, playlist, "");
+
+            Party party = partyrepo.getById(new Party
+            {
+                Party_ID = 4
             }
             );
+            Assert.AreNotEqual(null, party, "");
+
+            Role_Permission role_permission = role_permissionrepo.getById(new Role_Permission
+            {
+                Role_Permission_Combo_ID = 4
+            }
+            );
+            Assert.AreNotEqual(null, role_permission, "");
+
+            Person_Role person_role = personrolerepo.getById(new Person_Role
+            {
+                Person_Role_ID = 4
+            }
+            );
+            Assert.AreNotEqual(null, person_role, "");
+
+            Person person = personrepo.getById(new Person
+            {
+                Person_ID = 4
+            }
+           );
             Assert.AreNotEqual(null, person, "");
 
-            IQueryable<Person> persons = personRepo.query(a => a.Person_ID == 1);
-            Assert.AreEqual(2, persons.Count());
+
+            IQueryable<Song> songs = songrepo.query(a => a.Song_ID == 11111);
+            Assert.AreEqual(1, songs.Count());
+
+            IQueryable<Playlist> playlists = playlistrepo.query(a => a.Playlist_ID == 4);
+            Assert.AreEqual(1, playlists.Count());
+
+            IQueryable<Party> parties = partyrepo.query(a => a.Party_ID == 4);
+            Assert.AreEqual(1, parties.Count());
+
+            IQueryable<Role_Permission> roles = role_permissionrepo.query(a => a.Role_Permission_Combo_ID == 4);
+            Assert.AreEqual(1, roles.Count());
+
+            IQueryable<Person_Role> p_roles = personrolerepo.query(a => a.Person_Role_ID == 4);
+            Assert.AreEqual(1, p_roles.Count());
+
+            IQueryable<Person> persons = personrepo.query(a => a.Person_ID == 4);
+            Assert.AreEqual(1, persons.Count());
+
         }
 
         [TestCleanup]
-        public void clear()
+        public void cleanup()
         {
-            IQueryable<Person> persons = personRepo.query(a => a.Person_ID == 1);
+            IQueryable<Song> songs = songrepo.query(a => a.Song_ID == 11111);
+            foreach (Song item in songs.ToList<Song>())
+            {
+                songrepo.remove(item);
+            }
+
+            IQueryable<Playlist> playlists = playlistrepo.query(a => a.Playlist_ID == 4);
+            foreach (Playlist item in playlists.ToList<Playlist>())
+            {
+                playlistrepo.remove(item);
+            }
+
+            IQueryable<Party> partys = partyrepo.query(a => a.Party_ID == 4);
+            foreach (Party item in partys.ToList<Party>())
+            {
+                partyrepo.remove(item);
+            }
+
+            IQueryable<Role_Permission> rolePermissions = role_permissionrepo.query(a => a.Role_Permission_Combo_ID == 4);
+            foreach (Role_Permission item in rolePermissions.ToList<Role_Permission>())
+            {
+                role_permissionrepo.remove(item);
+            }
+
+            IQueryable<Person_Role> rolesPermissions = personrolerepo.query(a => a.Person_Role_ID == 4);
+            foreach (Person_Role item in rolesPermissions.ToList<Person_Role>())
+            {
+                personrolerepo.remove(item);
+            }
+
+            IQueryable<Person> persons = personrepo.query(a => a.Person_ID == 4);
             foreach (Person item in persons.ToList<Person>())
             {
-                personRepo.remove(item);
+                personrepo.remove(item);
             }
+
+
         }
     }
 }

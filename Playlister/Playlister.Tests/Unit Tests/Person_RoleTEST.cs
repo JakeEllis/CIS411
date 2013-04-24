@@ -54,7 +54,7 @@ namespace Playlister.Tests.Unit_Tests
             Assert.AreEqual(1, p_roles.Count());
         }
 
-        [TestInitialize]
+        [TestCleanup]
         public void clear()
         {
             IQueryable<Person_Role> rolesPermissions = person_roleRepo.query(a => a.Person_Role_ID == 1);

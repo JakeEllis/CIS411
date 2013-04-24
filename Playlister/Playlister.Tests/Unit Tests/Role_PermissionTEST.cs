@@ -23,7 +23,7 @@ namespace Playlister.Tests.Unit_Tests
                 Role_Permission_Combo_ID = 1,
                 Permission1 = true,
                 Permission2 = true,
-                PermissionN = 1,
+                PermissionN = 1
             }
             );
         }

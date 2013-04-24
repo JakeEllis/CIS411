@@ -66,7 +66,7 @@ namespace Playlister.Tests.Unit_Tests
                 partyRepo.remove(item);
             }
 
-            IQueryable<Playlist> playlists = playlistRepo.query(a => a.Playlist_ID == 1);
+            IQueryable<Playlist> playlists = playlistRepo.query(a => a.Playlist_ID == 123);
             foreach (Playlist item in playlists.ToList<Playlist>())
             {
                 playlistRepo.remove(item);
